@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <!--<< Header Area >>-->
+    @php
+        
+    
+    $firm_detail= backHelper::get_fimddetails();
+    @endphp
     <head>
         <!-- ========== Meta Tags ========== -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="modinatheme">
-        <meta name="description" content="SolarGlow & Solar Renewable Energy Html Template">
-        <!-- ======== Page title ============ -->
-        <title>SolarGlow & Solar Renewable Energy Html Template</title>
+       <!-- Meta Tags for LM Sangry - Solar Solutions -->
+        <title>LM Sangry | Hybrid, On-Grid, Off-Grid Solar Systems & Solar Power Plants</title>
+
+        <meta name="description" content="LM Sangry offers expert solar solutions, including Hybrid Solar Systems, On-Grid and Off-Grid Systems, and Solar Power Plants (3kW - 200kW) for homes, businesses, and industries. Contact us for cost-effective solar energy solutions.">
+
+        <meta name="keywords" content="Hybrid Solar Systems, On-Grid Solar Systems, Off-Grid Solar Systems, Solar Power Plants, Solar Energy Solutions, LM Sangry, 3kW - 10kW Solar, 20kW - 100kW Solar, 100kW - 200kW Solar, Renewable Energy, Solar Panel Installation, Net Metering, Industrial Solar Solutions">
+
+        <meta name="author" content="LM Sangry">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Open Graph Meta Tags for Social Media -->
+        <meta property="og:title" content="LM Sangry | Solar Power Solutions">
+        <meta property="og:description" content="Providing Hybrid, On-Grid, and Off-Grid Solar Systems, along with Solar Power Plants (3kW - 200kW) for homes, businesses, and industries.">
+        <meta property="og:image" content="https://yourwebsite.com/solar-image.jpg">
+        <meta property="og:url" content="https://yourwebsite.com">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="LM Sangry | Solar Energy Solutions">
+        <meta name="twitter:description" content="LM Sangry specializes in Hybrid, On-Grid, Off-Grid Solar Systems, and large-scale Solar Power Plants.">
+        <meta name="twitter:image" content="https://yourwebsite.com/solar-image.jpg">
+       
         <!--<< Favicon >>-->
         <link rel="shortcut icon" href="{{ asset('website') }}/assets/img/favicon.svg">
         <!--<< Bootstrap min.css >>-->
@@ -30,6 +52,33 @@
         <link rel="stylesheet" href="{{ asset('website') }}/assets/css/main.css">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="{{ asset('website') }}/style.css">
+        <style>
+            .page-banner-wrap::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background-color: #5b9b377d;
+                opacity: 0.8;
+                z-index: -1;
+            }
+            .hero-1 .hero-image::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background: linear-gradient(90deg, rgb(91 155 55 / 0%) 33.64%, rgb(91 155 55 / 0%) 41.74%, rgba(255, 255, 255, 0) 59.42%);
+                z-index: -1;
+            }
+            </style>
     </head>
 
     <body>
@@ -40,33 +89,31 @@
                 <div class="spinner">                
                 </div>
                 <div class="txt-loading">
-                    <span data-text-preloader="S" class="letters-loading">
-                        S
-                    </span>
-                    <span data-text-preloader="O" class="letters-loading">
-                        O
-                    </span>
                     <span data-text-preloader="L" class="letters-loading">
                         L
                     </span>
-                    <span data-text-preloader="A" class="letters-loading">
-                        A
+                    <span data-text-preloader="M" class="letters-loading">
+                       M
                     </span>
-                    <span data-text-preloader="R" class="letters-loading">
-                        R
+                    <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                       A
+                    </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
                     </span>
                     <span data-text-preloader="G" class="letters-loading">
                         G
                     </span>
-                    <span data-text-preloader="L" class="letters-loading">
-                        L
+                    <span data-text-preloader="R" class="letters-loading">
+                        R
                     </span>
-                    <span data-text-preloader="O" class="letters-loading">
-                        O
+                    <span data-text-preloader="Y" class="letters-loading">
+                       Y
                     </span>
-                    <span data-text-preloader="W" class="letters-loading">
-                        W
-                    </span>
+                    
                 </div>
                 <p class="text-center">Loading</p>
             </div>
@@ -117,7 +164,7 @@
                             </div>
                         </div>
                         <p class="text d-none d-xl-block">
-                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                            Let us help you switch to solar and take full advantage of government subsidies today!
                         </p>
                         <div class="mobile-menu fix mb-3"></div>
                         <div class="offcanvas__contact">
@@ -128,7 +175,7 @@
                                         <i class="fal fa-map-marker-alt"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                        <a target="_blank" href="#">{{$firm_detail->address}}</a>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -136,7 +183,7 @@
                                         <i class="fal fa-envelope"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="mailto:info@azent.com"><span class="mailto:info@example.com">info@example.com</span></a>
+                                        <a href="mailto:info@azent.com"><span class="mailto:{{$firm_detail->email}}">{{$firm_detail->email}}</span></a>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -144,7 +191,7 @@
                                         <i class="fal fa-clock"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                        <a target="_blank" href="#">Mon-friday, 09am -05pm</a>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -152,20 +199,20 @@
                                         <i class="far fa-phone"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="tel:+11002345909">+11002345909</a>
+                                        <a href="tel:{{$firm_detail->mobile}}">{{$firm_detail->mobile}}</a>
                                     </div>
                                 </li>
                             </ul>
                             <div class="header-button mt-4">
-                                <a href="contact.html" class="theme-btn text-center">
+                                <a href="{{route('contact.us')}}" class="theme-btn text-center">
                                     <span>get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
                                 </a>
                             </div>
                             <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="{{$firm_detail->facebook}}"><i class="fab fa-facebook-f"></i></a>
+                                <a href="{{$firm_detail->twitter}}"><i class="fab fa-twitter"></i></a>
+                                <a href="{{$firm_detail->youtube}}"><i class="fab fa-youtube"></i></a>
+                                <a href="{{$firm_detail->instagram}}"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -181,24 +228,24 @@
                     <ul class="contact-list">
                         <li>
                             <i class="far fa-phone-alt"></i>
-                            <a href="tel:2086660112">+208-666-0112</a>
+                            <a href="tel:{{$firm_detail->mobile}}">{{$firm_detail->mobile}}</a>
                         </li>
                         <li>
                             <i class="far fa-envelope"></i>
-                            <a href="mailto:info@example.com" class="link">info@example.com</a>
+                            <a href="mailto:{{$firm_detail->email}}" class="link">{{$firm_detail->email}}</a>
                         </li>
                         <li>
                             <i class="far fa-map-marker-alt"></i>
-                            6391 Elgin St. Celina, 10299
+                            {{$firm_detail->address}}
                         </li>
                     </ul>
                     <div class="top-right">
                         <div class="social-icon d-flex align-items-center">
                             <span>Follow Us:</span>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="{{$firm_detail->facebook}}"><i class="fab fa-facebook-f"></i></a>
+                            <a href="{{$firm_detail->twitter}}"><i class="fab fa-twitter"></i></a>
+                            <a href="{{$firm_detail->youtube}}"><i class="fab fa-youtube"></i></a>
+                            <a href="{{$firm_detail->instagram}}"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +259,7 @@
                     <div class="header-main">
                         <div class="logo">
                             <a href="{{route('welcome')}}" class="header-logo">
-                                <img src="{{ asset('website') }}/assets/img/logo/black-logo.svg" alt="logo-img">
+                                <img src="{{ asset('website') }}/assets/img/logo/logo_or.png" alt="logo-img" style="width: 75px;height: 75px;">
                             </a>
                         </div>
                         <div class="header-left">
@@ -229,9 +276,9 @@
                                             <li>
                                                 <a href="{{route('services')}}">Services</a>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <a href="{{route('our.projects')}}">Our Projects</a>
-                                            </li>
+                                            </li> --}}
                                             <li>
                                                 <a href="{{route('contact.us')}}">Conatct Us</a>
                                             </li>
@@ -245,7 +292,7 @@
                         <div class="header-right d-flex justify-content-end align-items-center">
                             <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
                             <div class="header-button">
-                                <a href="contact.html" class="theme-btn">
+                                <a href="{{route('contact.us')}}" class="theme-btn">
                                     Get a quote <i class="far fa-long-arrow-right"></i>
                                 </a>
                             </div>
@@ -284,18 +331,18 @@
                             <div class="single-footer-widget">
                                 <div class="widget-head">
                                     <a href="{{route('welcome')}}">
-                                        <img src="{{ asset('website') }}/assets/img/logo/footer-logo.svg" alt="logo-img">
+                                        <img src="{{ asset('website') }}/assets/img/logo/logo_or.png" alt="logo-img"  style="width: 75px;height: 75px;">
                                     </a>
                                 </div>
                                 <div class="footer-content">
                                     <p>
-                                        To deliver solar energy solutions that are competitively priced and meet worldwide quality requirements, as well as to create new goods using edge technology.
+                                        Our mission is to promote sustainable energy solutions by making solar adoption simple, hassle-free, and cost-effective. Whether you need assistance with off-grid, on-grid, hybrid solar systems, or large-scale solar power plants, LM Sangry is your trusted partner in a brighter, cleaner future.
                                     </p>
                                     <div class="social-icon d-flex align-items-center">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                        <a href="{{$firm_detail->facebook}}"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="{{$firm_detail->twitter}}"><i class="fab fa-twitter"></i></a>
+                                        <a href="{{$firm_detail->youtube}}"><i class="fab fa-youtube"></i></a>
+                                        <a href="{{$firm_detail->instagram}}"><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -303,14 +350,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5  wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h4 class="text-white">Our Projects</h4>
+                                    <h4 class="text-white">Our Services</h4>
                                 </div>
                                 <ul class="list-area">
-                                    <li><a href="service-details.html">Credit industrys</a></li>
-                                    <li><a href="service-details.html">Credit Consulting</a></li>
-                                    <li><a href="service-details.html">Business Credit industry</a></li>
-                                    <li><a href="service-details.html">Finance industry</a></li>
-                                    <li><a href="service-details.html">Smart Thinking</a></li>
+                                    <li><a href="#">Hybrid Solar Systems </a></li>
+                                    <li><a href="#">On-Grid Solar Systems </a></li>
+                                    <li><a href="#">Off-Grid Solar Systems</a></li>
+                                    <li><a href="#">Solar Power Plants</a></li>
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -323,7 +370,6 @@
                                     <li><a href="{{route('services')}}">Services</a></li>
                                     <li><a href="{{route('about.us')}}">About Us</a></li>
                                     <li><a href="{{route('contact.us')}}">Our Team</a></li>
-                                    <li><a href="#">Blog</a></li>
                                     <li><a href="{{route('contact.us')}}">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -398,7 +444,7 @@
                 <div class="container">
                     <div class="footer-bottom-wrapper d-flex align-items-center justify-content-between">
                         <p class="wow fadeInLeft" data-wow-delay=".3s">
-                            © <a href="{{route('welcome')}}">Sangry</a>  2025 | <span>All Rights</span> Reserved.
+                            © <a href="{{route('welcome')}}">{{$firm_detail->name}}</a>  2025 | <span>All Rights</span> Reserved.
                         </p>
                         <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
                             <li>
