@@ -1,5 +1,10 @@
 @extends('website.master')
 @section('content')
+@php
+        
+    
+$firm_detail= backHelper::get_fimddetails();
+@endphp
 <!-- Contact Info Section Start -->
 <section class="contact-page-wrap section-padding">
 	<div class="container">
@@ -17,8 +22,7 @@
 					</div>
 					<div class="bottom-part">                            
 						<div class="info">
-							<p>info@example.com</p>
-							<p>jobs@example.com</p>
+							<p>{{$firm_detail->email}}</p>
 						</div>
 						<div class="icon">
 							<i class="fal fa-arrow-right"></i>
@@ -39,8 +43,8 @@
 					</div>
 					<div class="bottom-part">                            
 						<div class="info">
-							<p>098-098-098-09</p>
-							<p>+(098) 098-098-765</p>
+							<p>{{$firm_detail->mobile}}</p>
+							
 						</div>
 						<div class="icon">
 							<i class="fal fa-arrow-right"></i>
@@ -61,8 +65,7 @@
 					</div>
 					<div class="bottom-part">                            
 						<div class="info">
-							<p>B2, Miranda City Tower</p>
-							<p>New York, US</p>
+							{{$firm_detail->address}}
 						</div>
 						<div class="icon">
 							<i class="fal fa-arrow-right"></i>

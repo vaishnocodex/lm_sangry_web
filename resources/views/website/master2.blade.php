@@ -11,7 +11,7 @@
     
     <base href="/" >
     <meta name="keywords" content="" />
-    <meta name="author" content="Grapxcode">
+    <meta name="author" content="">
     <meta name="robots" content="index, follow" />
    
     <!-- Mobile specific metas

@@ -1,5 +1,17 @@
 @extends('website.master')          
 @section('content')
+
+<style>
+    .faq-section .faq-image {
+    height: 983px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    max-width: 1150px;
+    z-index: 1;
+}
+    </style>
         <!-- Hero Section Start -->
         <section class="hero-section hero-1">
             <div class="array-button">
@@ -9,7 +21,7 @@
             <div class="swiper hero-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="hero-image bg-cover" style="background-image: url('{{ asset('website') }}/assets/img/hero/01.jpg');"></div>
+                        <div class="hero-image bg-cover" style="background-image: url('{{ asset('website') }}/assets/img/hero/m1.webp');"></div>
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-8">
@@ -28,7 +40,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="hero-image bg-cover" style="background-image: url('{{ asset('website') }}/assets/img/hero/04.jpg');"></div>
+                        <div class="hero-image bg-cover" style="background-image: url('{{ asset('website') }}/assets/img/hero/2.png');"></div>
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-8">
@@ -47,7 +59,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="hero-image bg-cover" style="background-image: url('{{ asset('website') }}/assets/img/hero/05.jpg');"></div>
+                        <div class="hero-image bg-cover" style="background-image: url('{{ asset('website') }}/assets/img/hero/3.png');"></div>
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-8">
@@ -76,29 +88,30 @@
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="about-image">
-                                <img src="{{ asset('website') }}/assets/img/about/01.jpg" alt="img">
+                                <img src="{{ asset('website') }}/assets/img/about/about-1.jpg" alt="img">
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                         <div class="col-lg-6">
                             <div class="about-content">
                                 <div class="section-title">
                                     <span class="wow fadeInUp">About Us</span>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Get Connected for <br> Enhanced Vision</h2>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        Get Connected for <br> Enhanced Vision</h2>
                                 </div>
                                 <ul class="nav mt-4 mt-md-0" role="tablist">
                                     <li class="nav-item wow fadeInUp" data-wow-delay=".3s" role="presentation">
                                         <a href="#technical" data-bs-toggle="tab" class="nav-link active" aria-selected="true" role="tab">
-                                            Technical
+                                            About
                                         </a>
                                     </li>
                                     <li class="nav-item wow fadeInUp" data-wow-delay=".5s" role="presentation">
                                         <a href="#work" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
-                                            Our Work
+                                            Mission
                                         </a>
                                     </li>
                                     <li class="nav-item wow fadeInUp" data-wow-delay=".7s" role="presentation">
                                         <a href="#ambition" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
-                                            Ambition
+                                            Vision
                                         </a>
                                     </li>
                                 </ul>
@@ -108,8 +121,9 @@
                                             <div class="col-md-6">
                                                 <div class="technical-site-item">
                                                     <div class="content">
-                                                        <h3 class="wow fadeInUp" data-wow-delay=".3s">Technical Site</h3>
-                                                        <p class="wow fadeInUp" data-wow-delay=".5s">Lorem ipsum dolor sit amet consectetur. Faucibus ut cursus integer id non ac. Aenean eros auctor a nulla porttitor scelerisque quisque pulvinar et. Id pellentesque mattis.</p>
+                                                        <h3 class="wow fadeInUp" data-wow-delay=".3s">About LM Sangry</h3>
+                                                        <p class="wow fadeInUp" data-wow-delay=".5s">
+                                                            Founded by LM Sangry, SolarGlow reflects a deep commitment to environmental sustainability and a passion for advancing renewable energy technologies. Guided by a vision of a cleaner planet, we aim to inspire others to embrace solar energy for a brighter, more sustainable future</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -125,8 +139,8 @@
                                                     <img src="{{ asset('website') }}/assets/img/about/icon/01.svg" alt="img">
                                                 </div>
                                                 <div class="content">
-                                                    <h5>Let’s get digital!</h5>
-                                                    pLorem Ipsum is simply dummy <br> text of the yes
+                                                    <h5>Expertise in Solar Solutions</h5>
+                                                    With years of industry experience and a team of skilled engineers,
                                                 </div>
                                             </div>
                                             <div class="icon-items wow fadeInUp" data-wow-delay=".5s">
@@ -134,8 +148,8 @@
                                                     <img src="{{ asset('website') }}/assets/img/about/icon/02.svg" alt="img">
                                                 </div>
                                                 <div class="content">
-                                                    <h5>Let’s get digital!</h5>
-                                                    pLorem Ipsum is simply dummy <br> text of the yes
+                                                    <h5>Commitment to Sustainability</h5>
+                                                    We are dedicated to promoting a sustainable and eco-friendly
                                                 </div>
                                             </div>
                                         </div>
@@ -145,8 +159,8 @@
                                             <div class="col-md-6">
                                                 <div class="technical-site-item">
                                                     <div class="content">
-                                                        <h3>Technical Site</h3>
-                                                        <p>Lorem ipsum dolor sit amet consectetur. Faucibus ut cursus integer id non ac. Aenean eros auctor a nulla porttitor scelerisque quisque pulvinar et. Id pellentesque mattis.</p>
+                                                        <h3>Mission Statement</h3>
+                                                        <p>At SolarGlow, our mission is to provide cutting-edge solar energy solutions that enhance energy independence, reduce costs, and minimize environmental impact. We are committed to excellence in design, installation, and maintenance, ensuring that our clients receive the highest quality of service and technology.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -162,8 +176,8 @@
                                                     <img src="{{ asset('website') }}/assets/img/about/icon/01.svg" alt="img">
                                                 </div>
                                                 <div class="content">
-                                                    <h5>Let’s get digital!</h5>
-                                                    pLorem Ipsum is simply dummy <br> text of the yes
+                                                    <h5>Delivering High-Quality Solar Solutions</h5>
+                                                    Our mission is to provide customized solar energy systems 
                                                 </div>
                                             </div>
                                             <div class="icon-items">
@@ -171,8 +185,8 @@
                                                     <img src="{{ asset('website') }}/assets/img/about/icon/02.svg" alt="img">
                                                 </div>
                                                 <div class="content">
-                                                    <h5>Let’s get digital!</h5>
-                                                    pLorem Ipsum is simply dummy <br> text of the yes
+                                                    <h5>Advancing Clean Energy Practices</h5>
+                                                    We are committed to advancing clean energy solutions
                                                 </div>
                                             </div>
                                         </div>
@@ -182,8 +196,8 @@
                                             <div class="col-md-6">
                                                 <div class="technical-site-item">
                                                     <div class="content">
-                                                        <h3>Technical Site</h3>
-                                                        <p>Lorem ipsum dolor sit amet consectetur. Faucibus ut cursus integer id non ac. Aenean eros auctor a nulla porttitor scelerisque quisque pulvinar et. Id pellentesque mattis.</p>
+                                                        <h3>Vision Statement</h3>
+                                                        <p>To be the leading force in the transition to a sustainable future by empowering individuals and businesses with innovative solar energy solutions that harness the sun’s power."</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -199,8 +213,8 @@
                                                     <img src="{{ asset('website') }}/assets/img/about/icon/01.svg" alt="img">
                                                 </div>
                                                 <div class="content">
-                                                    <h5>Let’s get digital!</h5>
-                                                    pLorem Ipsum is simply dummy <br> text of the yes
+                                                    <h5>Leading the Renewable Energy Transition</h5>
+                                                    To be recognized as a pioneer in solar energy, driving the shift towards sustainable energ
                                                 </div>
                                             </div>
                                             <div class="icon-items">
@@ -208,8 +222,8 @@
                                                     <img src="{{ asset('website') }}/assets/img/about/icon/02.svg" alt="img">
                                                 </div>
                                                 <div class="content">
-                                                    <h5>Let’s get digital!</h5>
-                                                    pLorem Ipsum is simply dummy <br> text of the yes
+                                                    <h5>Empowering Communities Through Solar</h5>
+                                                    We strive to empower individuals and businesses by making solar energy access
                                                 </div>
                                             </div>
                                         </div>
@@ -239,141 +253,130 @@
                         <div class="swiper-slide">
                             <div class="service-card-items-2">
                                 <div class="service-title">
-                                    <h5><a href="service-details.html">SolarBright Energy</a></h5>
-                                    <p>Loren ipsum</p>
+                                    <h5><a href="#">Hybrid Solar Systems</a></h5>
+                                    <p>Smart & Reliable Energy</p>
                                 </div>
                                 <div class="service-thumb">
-                                    <img src="{{ asset('website') }}/assets/img/service/07.jpg" alt="service-img">
+                                    <img src="{{ asset('website') }}/assets/img/service/1.png" alt="service-img">
                                     <div class="icon">
                                         <img src="{{ asset('website') }}/assets/img/service/icon/icon-4.svg" alt="img">
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is</p>
+                                    <p>Hybrid Solar Systems combine the benefits of both on-grid and off-grid solutions.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="service-card-items-2">
                                 <div class="service-title">
-                                    <h5><a href="service-details.html">EcoSun Energy</a></h5>
-                                    <p>Loren ipsum</p>
+                                    <h5><a href="#">On-Grid Solar Systems </a></h5>
+                                    <p>Cost-Effective & Efficient  </p>
                                 </div>
                                 <div class="service-thumb">
-                                    <img src="{{ asset('website') }}/assets/img/service/08.jpg" alt="service-img">
+                                    <img src="{{ asset('website') }}/assets/img/service/2.png" alt="service-img">
                                     <div class="icon">
                                         <img src="{{ asset('website') }}/assets/img/service/icon/icon-5.svg" alt="img">
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is</p>
+                                    <p>On-Grid Solar Systems are connected directly to the utility grid, allowing you to use solar power while feeding excess energy back into the grid</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="service-card-items-2">
                                 <div class="service-title">
-                                    <h5><a href="service-details.html">SunPower Systems</a></h5>
-                                    <p>Loren ipsum</p>
+                                    <h5><a href="#">Off-Grid Solar Systems</a></h5>
+                                    <p>Cost-Effective & Efficient</p>
                                 </div>
                                 <div class="service-thumb">
-                                    <img src="{{ asset('website') }}/assets/img/service/09.jpg" alt="service-img">
+                                    <img src="{{ asset('website') }}/assets/img/service/3.png" alt="service-img">
                                     <div class="icon">
                                         <img src="{{ asset('website') }}/assets/img/service/icon/icon-6.svg" alt="img">
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is</p>
+                                    <p>Designed for rural homes, farms, and businesses, off-grid systems ensure a reliable and sustainable energy source without relying on external power</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <div class="swiper-slide">
+                            <div class="service-card-items-2">
+                                <div class="service-title">
+                                    <h5><a href="#">Solar Power Plants</a></h5>
+                                    <p>Large-Scale Energy Solutions</p>
+                                </div>
+                                <div class="service-thumb">
+                                    <img src="{{ asset('website') }}/assets/img/service/4.png" alt="service-img">
+                                    <div class="icon">
+                                        <img src="{{ asset('website') }}/assets/img/service/icon/icon-6.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <p> reducing dependency on traditional power sources and lowering carbon footprints.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card-items-2">
+                                <div class="service-title">
+                                    <h5><a href="#">Solar Power Plants</a></h5>
+                                    <p>3kW - 10kw</p>
+                                </div>
+                                <div class="service-thumb">
+                                    <img src="{{ asset('website') }}/assets/img/service/5.png" alt="service-img">
+                                    <div class="icon">
+                                        <img src="{{ asset('website') }}/assets/img/service/icon/icon-6.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <p>3kW - 10kW Solar Power Plants are perfect for residential properties, small offices, and shops.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card-items-2">
+                                <div class="service-title">
+                                    <h5><a href="#">Solar Power Plants</a></h5>
+                                    <p>20kW - 100kw</p>
+                                </div>
+                                <div class="service-thumb">
+                                    <img src="{{ asset('website') }}/assets/img/service/6.png" alt="service-img">
+                                    <div class="icon">
+                                        <img src="{{ asset('website') }}/assets/img/service/icon/icon-6.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <p>20kW - 100kW Solar Power Plants offer a cost-effective solution to meet higher energy demands.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card-items-2">
+                                <div class="service-title">
+                                    <h5><a href="#">Solar Power Plants</a></h5>
+                                    <p>100kW - 200kw</p>
+                                </div>
+                                <div class="service-thumb">
+                                    <img src="{{ asset('website') }}/assets/img/service/7.png" alt="service-img">
+                                    <div class="icon">
+                                        <img src="{{ asset('website') }}/assets/img/service/icon/icon-6.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <p>Designed for industries, large-scale commercial establishments, and government projects, our 100kW - 200kW Solar Power Plants generate substantial clean energy</p>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- Team Section Start -->
-        <section class="team-section fix section-padding">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <span class="wow fadeInUp">Team members</span>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Adorn your Home with <br> Green Energy</h2>
-                    </div>
-                    <div class="array-button wow fadeInUp" data-wow-delay=".5s">
-                        <button class="array-prev"><i class="far fa-chevron-left"></i></button>
-                        <button class="array-next"><i class="far fa-chevron-right"></i></button>
-                    </div>
-                </div>
-                <div class="swiper team-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="team-box-items">
-                                <div class="team-image">
-                                    <img src="{{ asset('website') }}/assets/img/team/01.jpg" alt="img">
-                                    <div class="team-content">
-                                        <p>Omitted</p>
-                                        <h3><a href="team-details.html">Hub of tech</a></h3>
-                                        <div class="social-profile">
-                                            <ul>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            </ul>
-                                            <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="team-box-items">
-                                <div class="team-image">
-                                    <img src="{{ asset('website') }}/assets/img/team/02.jpg" alt="img">
-                                    <div class="team-content">
-                                        <p>Omitted</p>
-                                        <h3><a href="team-details.html">Sustainable Peace</a></h3>
-                                        <div class="social-profile">
-                                            <ul>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            </ul>
-                                            <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="team-box-items">
-                                <div class="team-image">
-                                    <img src="{{ asset('website') }}/assets/img/team/03.jpg" alt="img">
-                                    <div class="team-content">
-                                        <p>Omitted</p>
-                                        <h3><a href="team-details.html">Use solar</a></h3>
-                                        <div class="social-profile">
-                                            <ul>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            </ul>
-                                            <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Counter Section Start -->
-        <section class="counter-section fix section-padding bg-cover" style="background-image: url('{{ asset('website') }}/assets/img/counter-bg.jpg');">
+        <section class="counter-section fix section-padding bg-cover" style="background-image: url('{{ asset('website') }}/assets/img/bg-2.jpg');">
             <div class="container">
                 <div class="counter-wrapper">
                     <div class="counter-items wow fadeInUp" data-wow-delay=".2s">
@@ -417,7 +420,7 @@
                     <div class="row g-0 align-items-center">
                         <div class="col-xl-7 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div class="contact-image">
-                                <img src="{{ asset('website') }}/assets/img/contact.jpg" alt="img">
+                                <img src="{{ asset('website') }}/assets/img/about/1.png" alt="img">
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-6">
@@ -476,7 +479,7 @@
                                 <img src="{{ asset('website') }}/assets/img/project/01.jpg" alt="img">
                                 <div class="project-content">
                                     <p>Delivery</p>
-                                    <h3><a href="project-details.html">Modern Vehicles Fleet</a></h3>
+                                    <h3><a href="#">Modern Vehicles Fleet</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -487,7 +490,7 @@
                                 <img src="{{ asset('website') }}/assets/img/project/02.jpg" alt="img">
                                 <div class="project-content">
                                     <p>Delivery</p>
-                                    <h3><a href="project-details.html">Modern Vehicles Fleet</a></h3>
+                                    <h3><a href="#">Modern Vehicles Fleet</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -498,7 +501,7 @@
                                 <img src="{{ asset('website') }}/assets/img/project/03.jpg" alt="img">
                                 <div class="project-content">
                                     <p>Delivery</p>
-                                    <h3><a href="project-details.html">Modern Vehicles Fleet</a></h3>
+                                    <h3><a href="#">Modern Vehicles Fleet</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -510,7 +513,7 @@
         <!-- Faq Section Start -->
         <section class="faq-section fix section-padding">
             <div class="faq-image">
-                <img src="{{ asset('website') }}/assets/img/faq.jpg" alt="img">
+                <img src="{{ asset('website') }}/assets/img/faqbg.png" alt="img">
             </div>
             <div class="container">
                 <div class="row">
@@ -526,36 +529,36 @@
                                     <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
                                         <h4 class="accordion-header">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="true" aria-controls="faq2">
-                                                Contrary to popular belief, Lorem Ipsum ?
+                                                Which solar system is best for my home or business?
                                             </button>
                                         </h4>
                                         <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                It is a long established fact that a reader will be distr acted bioiiy the readable content of a page when looking at its layout  Thoiie point of using.It is a long established fact
+                                                On-Grid is ideal for areas with reliable grid power, Off-Grid is best for remote locations, and Hybrid is suitable for places with frequent power outages.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
                                         <h4 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
-                                                Many desktop publishing packages page ?
+                                                How much solar power do I need?
                                             </button>
                                         </h4>
                                         <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                It is a long established fact that a reader will be distr acted bioiiy the readable content of a page when looking at its layout  Thoiie point of using.It is a long established fact
+                                                3kW - 10kW is ideal for homes, 20kW - 100kW suits businesses, and 100kW - 200kW is best for industries and large-scale applications.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item wow fadeInUp" data-wow-delay=".7s">
                                         <h4 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                                Lorem Ipsum is simply dumm iandtype ?
+                                                Can I sell excess solar energy back to the grid?
                                             </button>
                                         </h4>
                                         <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                It is a long established fact that a reader will be distr acted bioiiy the readable content of a page when looking at its layout  Thoiie point of using.It is a long established fact
+                                                Yes, On-Grid systems allow surplus energy to be exported through net metering, reducing electricity bills.
                                             </div>
                                         </div>
                                     </div>
@@ -568,9 +571,9 @@
         </section>
 
         <!-- Testimonial Section Start -->
-        <section class="testimonial-section fix section-padding">
+        {{-- <section class="testimonial-section fix section-padding">
             <div class="map-shape">
-                <img src="{{ asset('website') }}/assets/img/testimonial/map-shape.png" alt="shape-img">
+                <img src="{{ asset('website') }}/assets/img/bg_img1.jpg" alt="shape-img">
             </div>
             <div class="container">
                 <div class="section-title text-center">
@@ -630,7 +633,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <!-- Work Process Section Start -->
         <section class="work-process fix section-bg section-padding">
@@ -641,140 +644,38 @@
                             <span class="wow fadeInUp">Work process</span>
                             <h2 class="wow fadeInUp" data-wow-delay=".3s">How we work</h2>
                             <p class="wow fadeInUp" data-wow-delay=".5s">
-                                Lorem ipsum amonsectetur. Nisla libero arcu adipiscing lectus ab biscuit Lorem ipsum amonsectetur. Nisla 
+                                we are dedicated to making solar energy more accessible and affordable for everyone. We specialize in customer support services for solar power solutions, helping individuals and businesses navigate the process of installation, government approvals, and subsidies.
                             </p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="work-process-card-items">
                             <h2>01</h2>
-                            <h5>Adding Green Energy to your Life</h5>
-                            <p>Lorem ipsum amonsectetur. Nisla libero arcu adipiscing lectus ab biscuit</p>
-                            <a href="about.html" class="link-btn">Read More <i class="far fa-long-arrow-right"></i></a>
+                            <h5>Consultation & Eligibility Check</h5>
+                            <p>Our team understands your energy needs and budget.We check your eligibility for government subsidies and inform you about available financial benefits.</p>
+                            <a href="{{route('about.us')}}" class="link-btn">Read More <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                         <div class="work-process-card-items">
                             <h2>02</h2>
-                            <h5>Developing future with solar solutions</h5>
-                            <p>Lorem ipsum amonsectetur. Nisla libero arcu adipiscing lectus ab biscuit</p>
-                            <a href="about.html" class="link-btn">Read More <i class="far fa-long-arrow-right"></i></a>
+                            <h5> Documentation & Approval</h5>
+                            <p>We assist in filling out paperwork and submitting subsidy applications.We handle all government approvals, net metering applications, and compliance requirements.</p>
+                            <a href="{{route('about.us')}}" class="link-btn">Read More <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                         <div class="work-process-card-items">
                             <h2>03</h2>
-                            <h5>Adorn your Home with Green Energy</h5>
-                            <p>Lorem ipsum amonsectetur. Nisla libero arcu adipiscing lectus ab biscuit</p>
-                            <a href="about.html" class="link-btn">Read More <i class="far fa-long-arrow-right"></i></a>
+                            <h5>Installation & Support</h5>
+                            <p>Once approvals are done, we assist in installing your solar system.Our team ensures proper testing and commissioning for optimal performance.</p>
+                            <a href="{{route('about.us')}}" class="link-btn">Read More <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- News Section Start -->
-        <section class="news-section fix section-padding">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <span class="wow fadeInUp">our Blogs</span>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Start with a plan and <br> finish with results</h2>
-                    </div>
-                    <div class="array-button wow fadeInUp" data-wow-delay=".5s">
-                        <button class="array-prev"><i class="far fa-chevron-left"></i></button>
-                        <button class="array-next"><i class="far fa-chevron-right"></i></button>
-                    </div>
-                </div>
-                <div class="swiper news-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="news-card-items">
-                                <div class="news-image">
-                                    <img src="{{ asset('website') }}/assets/img/news/01.jpg" alt="img">
-                                    <img src="{{ asset('website') }}/assets/img/news/01.jpg" alt="img">
-                                </div>
-                                <div class="news-content">
-                                    <div class="post-cat">
-                                        Design
-                                    </div>
-                                    <ul class="post-date">
-                                        <li>
-                                            <i class="fas fa-calendar-alt"></i>
-                                            October 19, 2024
-                                        </li>
-                                        <li>
-                                            <i class="far fa-user"></i>
-                                            By admin
-                                        </li>
-                                    </ul>
-                                    <h3><a href="news-details.html">Affordable, targeted media for everyone targeted</a></h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and type Lorem Ipsum is simply dummy text</p>
-                                    <a href="news-details.html" class="link-btn">
-                                        read more <i class="far fa-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="news-card-items">
-                                <div class="news-image">
-                                    <img src="{{ asset('website') }}/assets/img/news/02.jpg" alt="img">
-                                    <img src="{{ asset('website') }}/assets/img/news/03.jpg" alt="img">
-                                </div>
-                                <div class="news-content">
-                                    <div class="post-cat">
-                                        Design
-                                    </div>
-                                    <ul class="post-date">
-                                        <li>
-                                            <i class="fas fa-calendar-alt"></i>
-                                            October 19, 2024
-                                        </li>
-                                        <li>
-                                            <i class="far fa-user"></i>
-                                            By admin
-                                        </li>
-                                    </ul>
-                                    <h3><a href="news-details.html">Affordable, targeted media for everyone targeted</a></h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and type Lorem Ipsum is simply dummy text</p>
-                                    <a href="news-details.html" class="link-btn">
-                                        read more <i class="far fa-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="news-card-items">
-                                <div class="news-image">
-                                    <img src="{{ asset('website') }}/assets/img/news/03.jpg" alt="img">
-                                    <img src="{{ asset('website') }}/assets/img/news/03.jpg" alt="img">
-                                </div>
-                                <div class="news-content">
-                                    <div class="post-cat">
-                                        Design
-                                    </div>
-                                    <ul class="post-date">
-                                        <li>
-                                            <i class="fas fa-calendar-alt"></i>
-                                            October 19, 2024
-                                        </li>
-                                        <li>
-                                            <i class="far fa-user"></i>
-                                            By admin
-                                        </li>
-                                    </ul>
-                                    <h3><a href="news-details.html">Affordable, targeted media for everyone targeted</a></h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and type Lorem Ipsum is simply dummy text</p>
-                                    <a href="news-details.html" class="link-btn">
-                                        read more <i class="far fa-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
 @endsection
