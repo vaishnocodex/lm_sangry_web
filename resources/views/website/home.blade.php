@@ -476,10 +476,10 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="project-card-items">
                             <div class="project-image">
-                                <img src="{{ asset('website') }}/assets/img/project/01.jpg" alt="img">
+                                <img src="{{ asset('website') }}/assets/projects/img-01.jpg" alt="img" style="height: 400px;width:400px;">
                                 <div class="project-content">
                                     <p>Delivery</p>
-                                    <h3><a href="#">Modern Vehicles Fleet</a></h3>
+                                    <h3><a href="#">Project site images</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -487,10 +487,10 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                         <div class="project-card-items">
                             <div class="project-image">
-                                <img src="{{ asset('website') }}/assets/img/project/02.jpg" alt="img">
+                                <img src="{{ asset('website') }}/assets/projects/img-02.jpg" alt="img" style="height: 400px;width:400px;">
                                 <div class="project-content">
                                     <p>Delivery</p>
-                                    <h3><a href="#">Modern Vehicles Fleet</a></h3>
+                                    <h3><a href="#">Project site images</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -498,10 +498,43 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                         <div class="project-card-items">
                             <div class="project-image">
-                                <img src="{{ asset('website') }}/assets/img/project/03.jpg" alt="img">
+                                <img src="{{ asset('website') }}/assets/projects/img-03.jpg" alt="img" style="height: 400px;width:400px;">
                                 <div class="project-content">
                                     <p>Delivery</p>
-                                    <h3><a href="#">Modern Vehicles Fleet</a></h3>
+                                    <h3><a href="#">Project site images</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="project-card-items">
+                            <div class="project-image">
+                                <img src="{{ asset('website') }}/assets/projects/img-04.jpg" alt="img" style="height: 400px;width:400px;">
+                                <div class="project-content">
+                                    <p>Delivery</p>
+                                    <h3><a href="#">Project site images</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="project-card-items">
+                            <div class="project-image">
+                                <img src="{{ asset('website') }}/assets/projects/img-05.jpg" alt="img" style="height: 400px;width:400px;">
+                                <div class="project-content">
+                                    <p>Delivery</p>
+                                    <h3><a href="#">Project site images</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="project-card-items">
+                            <div class="project-image">
+                                <img src="{{ asset('website') }}/assets/projects/img-06.jpg" alt="img" style="height: 400px;width:400px;">
+                                <div class="project-content">
+                                    <p>Delivery</p>
+                                    <h3><a href="#">Project site images</a></h3>
                                 </div>
                             </div>
                         </div>
